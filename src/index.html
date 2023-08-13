@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="https://papersplea.se/favicons/favicon-196x196.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
   <title>Glory Greatest</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -42,8 +44,7 @@ Several ministries have contributed significant resources to effect the celebrat
 
 ---- The Ministry of Giving has secured a donation of $100,000 to support the International Rescue Committee in their mission to help those affected by conflict and disaster.
 
-Finally, the Ministry of Gratitude Assignment would like to extend great thanks to all 5 million inspectors that have dutifully served at Grestin Border Checkpoint over the last 10 years. Your unwavering eye and deft skill are testaments to the vast resourcefulness of the Arstotzkan spirit.
-      " rows="20" cols="50"></textarea>
+Finally, the Ministry of Gratitude Assignment would like to extend great thanks to all 5 million inspectors that have dutifully served at Grestin Border Checkpoint over the last 10 years. Your unwavering eye and deft skill are testaments to the vast resourcefulness of the Arstotzkan spirit." rows="20" cols="50"></textarea>
   <label for="toggleFooterText">Show default footer text:</label>
   <input type="checkbox" id="toggleFooterText" checked>
       <div id="releaseOutput" class="release">
@@ -67,10 +68,13 @@ APPROVED FOR RELEASE WITH EDITS BY THE MINISTRY OF INFORMATION
     </pre>
     <img id="releaseFooter" src="img/Release-Footer.png" style="display: none;">
   </div>
-</div>
+        <div class="downloadButtonContainer">
+          <button id="download" onclick="downloadRelease()" style="background-image: url('img/downloadPressed.png');"></button>
+        </div>
+      </div>
     </div>
   </div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
