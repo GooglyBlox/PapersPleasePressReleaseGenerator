@@ -106,7 +106,34 @@
       width: 100%;
     }
 
-textarea::placeholder {
-  opacity: 0.4; 
-  color: inherit;
-}
+    textarea::placeholder {
+      opacity: 0.4;
+      color: inherit;
+    }
+
+    #download {
+      align-items: left;
+      border: 3px solid black;
+      background-color: #DFEAC7;
+      font-family: Nokia;
+      margin: 1px;
+      box-sizing: border-box;
+      all: unset;
+      width: 200px;
+      height: 300px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: -4px;
+      background-image: url("img/downloadPressed.png");
+    }
+
+    .downloadButtonContainer {
+      position: relative;
+      margin-top: -15px;
+    }
+
+    #download {
+      position: absolute;
+      left: 20px;
+
+    }
