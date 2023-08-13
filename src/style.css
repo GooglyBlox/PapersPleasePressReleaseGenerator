@@ -1,0 +1,112 @@
+    @font-face {
+      font-family: Pixelplay;
+      src: url('fonts/pixelplay.woff');
+      font-display: swap
+    }
+
+    body {
+      background-color: #191212;
+      background: linear-gradient(90deg, #191212 10px, transparent 1%) center, linear-gradient(#191212 10px, transparent 1%) center, #322525;
+      background-size: 14px 14px;
+      max-width: 100%;
+      height: 200%;
+      text-align: center;
+      font-family: "Courier", monospace;
+      color: #896a67;
+      font-size: 11pt;
+      line-height: 12pt;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .mainContent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin-top: 20px;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+    }
+
+
+    .release {
+      text-align: left;
+      font-family: "Courier", monospace;
+      color: #896a67;
+      font-size: 11pt;
+      line-height: 12pt;
+      box-sizing: border-box;
+      max-width: 720px;
+      padding: 40px 40px 30px 40px;
+      border: 1px solid #896a67;
+      border-width: 1px 1px 4px 1px;
+      background-color: #e0e9c7;
+      margin: 20px;
+    }
+
+    .release pre {
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    #releaseHeader {
+      display: none;
+      width: 100%;
+    }
+
+    #releaseFooter {
+      display: none;
+      width: 100%;
+    }
+
+    #releaseFooterText {
+      display: none;
+      font-size: 11pt;
+      color: #896a67;
+      margin-top: 10px;
+      padding-left: 20px;
+      border-left: 1px solid #896a67;
+    }
+
+    #approvalText {
+      text-align: left !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      display: none;
+    }
+
+    .logoCenter {
+      text-align: center;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 2px;
+      font-family: 'Pixelplay';
+      color: white;
+
+    }
+
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+textarea::placeholder {
+  opacity: 0.4; 
+  color: inherit;
+}
