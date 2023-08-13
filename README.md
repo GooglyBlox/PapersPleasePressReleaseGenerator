@@ -1,6 +1,6 @@
 # Glory Greatest - Press Release Generator
 
-![Papers, Please Logo](img/paperspleaselogo.png)
+![Papers, Please Logo](src/img/paperspleaselogo.png)
 
 Generate official press releases in the style of "Papers, Please," a game by Lucas Pope. This web application allows you to create, modify, and present press releases like those from the fictional world of Arstotzka.
 
