@@ -1,4 +1,4 @@
-# Glory Greatest - Press Release Generator
+# [Glory Greatest - Press Release Generator](https://glory-greatest.googlyblox.repl.co)
 
 ![Papers, Please Logo](src/img/paperspleaselogo.png)
 
