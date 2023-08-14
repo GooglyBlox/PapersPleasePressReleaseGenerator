@@ -125,6 +125,7 @@
       background-repeat: no-repeat;
       margin-top: -4px;
       background-image: url("img/downloadPressed.png");
+      cursor: pointer;
     }
 
     .downloadButtonContainer {
@@ -147,6 +148,15 @@
     }
 
     #releaseInput {
-      width: 100%;
-      max-width: 720px;
+    color-scheme: dark !important;
+    --darkreader-neutral-background: #131516;
+    --darkreader-neutral-text: #d8d4cf;
+    --darkreader-selection-background: #004daa;
+    --darkreader-selection-text: #e8e6e3;
+    height: 200px;
+    padding: 10px;
+    width: 100%;
+    max-width: 720px;
     }
+
+
