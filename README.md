@@ -9,6 +9,7 @@ Generate official press releases in the style of "Papers, Please," a game by Luc
 - [Features](#features)
 - [Usage](#usage)
 - [Credits](#acknowledgements)
+- [Example](#examples)
 
 ## Features
 
@@ -26,6 +27,10 @@ Generate official press releases in the style of "Papers, Please," a game by Luc
 
 - Lucas Pope, creator of "Papers, Please."
 - Lots of code, images, and styling from [PapersPleaseDocumentGenerator](https://github.com/woodendoors7/PapersPleaseDocumentGenerator), created by the fantastic [woodendoors7](https://github.com/woodendoors7)
+
+## Examples
+
+![Papers, Please Press Document](src/img/release.png)
 
 ---
 
