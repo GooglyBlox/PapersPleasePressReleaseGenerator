@@ -137,3 +137,16 @@
       left: 20px;
 
     }
+
+
+    .releaseContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto;
+    }
+
+    #releaseInput {
+      width: 100%;
+      max-width: 720px;
+    }
