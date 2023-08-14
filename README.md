@@ -1,4 +1,6 @@
+<sup><sub>*Heavily inspired by the Papers Please 10th Anniversary Announcement*</sub></sup>
 # [Glory Greatest - Press Release Generator](https://glory-greatest.googlyblox.repl.co)
+
 
 ![Papers, Please Logo](src/img/paperspleaselogo.png)
 
