@@ -4,17 +4,17 @@ const releaseHeader = document.getElementById('releaseHeader');
 const releaseFooter = document.getElementById('releaseFooter');
 const approvalText = document.getElementById('approvalText');
 const toggleFooterText = document.getElementById('toggleFooterText');
+const downloadButton = document.getElementById('download');
+const releaseOutput = document.getElementById('releaseOutput');
 
 releasePre.textContent = releaseInput.placeholder;
 releaseInput.value = releaseInput.placeholder;
-
 releaseHeader.style.display = 'block';
 releaseFooter.style.display = 'block';
 
 function updateApprovalTextVisibility() {
   approvalText.style.display = toggleFooterText.checked ? 'block' : 'none';
 }
-
 updateApprovalTextVisibility();
 
 releaseInput.addEventListener('input', () => {
@@ -33,7 +33,6 @@ function startFlickering() {
 
   flickerInterval = setInterval(function() {
     if (pressed) return;
-    const downloadButton = document.getElementById('download');
     const currentImage = downloadButton.style.backgroundImage;
     if (currentImage.includes("downloadUnpressed.png")) {
       downloadButton.style.backgroundImage = "url('img/downloadPressed.png')";
@@ -46,10 +45,8 @@ startFlickering();
 
 function downloadRelease() {
   pressed = true;
-  const downloadButton = document.getElementById('download');
   downloadButton.style.backgroundImage = "url('img/downloadPressed.png')";
 
-  const releaseOutput = document.getElementById('releaseOutput');
   html2canvas(releaseOutput).then(function(canvas) {
     const link = document.createElement('a');
     link.href = canvas.toDataURL('image/png');
