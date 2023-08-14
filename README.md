@@ -10,7 +10,7 @@ Generate official press releases in the style of "Papers, Please," a game by Luc
 
 - [Features](#features)
 - [Usage](#usage)
-- [Credits](#acknowledgements)
+- [Acknowledgements](#acknowledgements)
 - [Example](#examples)
 
 ## Features
