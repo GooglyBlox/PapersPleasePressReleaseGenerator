@@ -32,7 +32,7 @@ Generate official press releases in the style of "Papers, Please," a game by Luc
 
 ## Examples
 
-![Papers, Please Press Document](src/img/release.png)
+![Papers, Please Press Document](/img/release.png)
 
 ---
 
