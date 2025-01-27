@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#896a67" />
+    <meta property="og:title" content="Glory Greatest" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content='Generate official press releases in the style of "Papers, Please," a game by Lucas Pope. This web application allows you to create, modify, and present press releases like those from the fictional world of Arstotzka.'
+    />
+    <link rel="icon" type="image/png" href="img/logo.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#896a67">
-<meta property="og:title" content="Glory Greatest" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="Generate official press releases in the style of &quot;Papers, Please,&quot; a game by Lucas Pope. This web application allows you to create, modify, and present press releases like those from the fictional world of Arstotzka."/>
-  <link rel="icon" type="image/png" href="img/logo.ico">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <title>Glory Greatest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <title>Glory Greatest</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <div class="logoCenter">
+      <a
+        target="_blank"
+        href="https://store.steampowered.com/app/239030/Papers_Please/"
+      >
+        <img
+          class="logo"
+          src="img/paperspleaselogo.png"
+          style="width: 250px"
+          alt="Papers, please"
+        />
+        <p
+          id="game"
+          style="
+            color: white;
+            font-size: 20px;
+            line-height: 20px;
+            margin-left: 20px;
+          "
+        >
+          a game by Lucas Pope
+        </p>
+      </a>
+      <h1 style="font-size: 64px; line-height: 64px">
+        PRESS RELEASE GENERATOR
+      </h1>
+    </div>
 
-<body>
-  <div class="logoCenter">
-    <a target="_blank" href="https://store.steampowered.com/app/239030/Papers_Please/">
-      <img class="logo" src="img/paperspleaselogo.png" style="width: 250px" alt="Papers, please">
-      <p id="game" style="color: white; font-size: 20px; line-height: 20px; margin-left: 20px;">a game by Lucas Pope</p>
-    </a>
-    <h1 style="font-size: 64px; line-height: 64px;">PRESS RELEASE GENERATOR</h1>
-  </div>
-
-  <div class="mainContent">
-    <div class="content">
-      <div class="container">
-        <textarea id="releaseInput" placeholder="1993 AUGUST 8
+    <div class="mainContent">
+      <div class="content">
+        <div class="container">
+          <textarea
+            id="releaseInput"
+            placeholder='1993 AUGUST 8
 
 MINISTRY OF SCHEDULED CELEBRATION
 PARADIZNA, ARSTOTZKA
 
-&quot;PAPERS, PLEASE&quot; 10TH ANNIVERSARY
+"PAPERS, PLEASE" 10TH ANNIVERSARY
 
 The Ministry of Scheduled Celebration congratulates Arstotzka and the Ministry of Admission for ten successful years of service at Grestin Border Checkpoint. A nation is defined by its borders, and the checkpoint in West Grestin represents an unparalleled success in presenting Arstotzka at its best.
 
 Several ministries have contributed significant resources to effect the celebration of this momentous occasion.
 
----- The Ministry of Discounts &amp; Flash Sales has reduced the price of border checkpoint simulator &quot;Papers, Please&quot; software on all platforms, to $1.99, until end-of-day August 11.
+---- The Ministry of Discounts &amp; Flash Sales has reduced the price of border checkpoint simulator "Papers, Please" software on all platforms, to $1.99, until end-of-day August 11.
 
 ---- The Ministry of Fabric has produced several garments, appropriate for off-duty inspectors or ministry staff.
 
 ---- The Ministry of Melody has collected several popular songs to amuse inspectors, now available on partnered music broadcasters.
 
----- The Ministry of Pocket Electronics has developed a cutting-edge simulated hand-held training tool, &quot;LCD Please&quot;, to sharpen inspectors' wits.
+---- The Ministry of Pocket Electronics has developed a cutting-edge simulated hand-held training tool, "LCD Please", to sharpen inspectors&apos; wits.
 
 ---- The Ministry of Giving has secured a donation of $100,000 to support the International Rescue Committee in their mission to help those affected by conflict and disaster.
 
-Finally, the Ministry of Gratitude Assignment would like to extend great thanks to all 5 million inspectors that have dutifully served at Grestin Border Checkpoint over the last 10 years. Your unwavering eye and deft skill are testaments to the vast resourcefulness of the Arstotzkan spirit."></textarea>
-        <label for="toggleFooterText">Show default footer text:</label>
-        <input type="checkbox" id="toggleFooterText" checked>
-        <div id="releaseOutput" class="release">
-          <img id="releaseHeader" src="img/Release-Header.png">
-          <pre id="mainText"> ... default text ... </pre>
-          <pre id="approvalText" style="display: none;">Glory to Arstotzka.
+Finally, the Ministry of Gratitude Assignment would like to extend great thanks to all 5 million inspectors that have dutifully served at Grestin Border Checkpoint over the last 10 years. Your unwavering eye and deft skill are testaments to the vast resourcefulness of the Arstotzkan spirit.'
+          ></textarea>
+          <label for="toggleFooterText">Show default footer text:</label>
+          <input type="checkbox" id="toggleFooterText" checked />
+          <div id="releaseOutput" class="release">
+            <img id="releaseHeader" src="img/Release-Header.png" />
+            <pre id="mainText"> ... default text ... </pre>
+            <pre id="approvalText" style="display: none">
+Glory to Arstotzka.
 
 APPROVED FOR RELEASE BY THE MINISTRY OF MEDIA
 APPROVED FOR RELEASE BY THE MINISTRY OF COMMUNICATION
@@ -67,16 +93,24 @@ APPROVED FOR RELEASE BY THE MINISTRY OF MELODY
 APPROVED FOR RELEASE BY THE MINISTRY OF POCKET ELECTRONICS
 APPROVED FOR RELEASE BY THE MINISTRY OF GRATITUDE ASSIGNMENT
 APPROVED FOR RELEASE WITH EDITS BY THE MINISTRY OF SECURITY
-APPROVED FOR RELEASE WITH EDITS BY THE MINISTRY OF INFORMATION</pre>
-          <img id="releaseFooter" src="img/Release-Footer.png" style="display: none;">
-        </div>
-        <div class="downloadButtonContainer">
-          <button id="download" onclick="downloadRelease()" style="background-image: url('img/downloadPressed.png');"></button>
+APPROVED FOR RELEASE WITH EDITS BY THE MINISTRY OF INFORMATION</pre
+            >
+            <img
+              id="releaseFooter"
+              src="img/Release-Footer.png"
+              style="display: none"
+            />
+          </div>
+          <div class="downloadButtonContainer">
+            <button
+              id="download"
+              onclick="downloadRelease()"
+              style="background-image: url('img/downloadPressed.png')"
+            ></button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
